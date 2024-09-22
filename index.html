@@ -11,51 +11,62 @@
     <title>assignment-5</title>
 </head>
 <body>
-    <header>
-        <div class="navbar bg-base-100">
-  <div class="navbar-start">
+    <!-- navbar start here  -->
+    <header class="lg:w-11/12 container mx-auto">
+    <div class="navbar">
+  <div class="navbar-start justify-center">
     <div>
-        <button class="btn px-11 bg-[#B4F461]">Blog</button>
+        <button class="btn px-11 font-bold text-xl bg-[#B4F461]">Blog</button>
     </div>
   </div>
   <div class="navbar-center">
-    <a class="btn btn-ghost text-xl">daisyUI</a>
+    <img src="assets/logo.png" alt="">
+    <a class="btn btn-ghost text-xl">Donate Bangladesh</a>
   </div>
   <div class="navbar-end">
-    <button class="btn btn-ghost btn-circle">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-5 w-5"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor">
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-      </svg>
-    </button>
-    <button class="btn btn-ghost btn-circle">
-      <div class="indicator">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-        </svg>
-        <span class="badge badge-xs badge-primary indicator-item"></span>
-      </div>
-    </button>
+    <div class="flex gap-x-4">
+        <img src="assets/coin.png" alt="">
+        <p id="my-balance" class="font-semibold">5500</p>
+        <p class="font-semibold">BDT</p>
+    </div>
   </div>
-</div>
+    </div>
     </header>
-    <main></main>
+    <!-- navbar end here  -->
+     <div class="flex justify-center mt-20 space-x-4">
+        <button class="btn px-8 font-bold text-xl bg-[#B4F461]">Donation</button>
+        <button class="btn px-8 font-bold text-xl bg-[#B4F461]">History</button>
+     </div>
+    <main class="mt-20 flex justify-center">
+        <!-- first section start  -->
+        <section class="">
+            <div class="hero bg-white border rounded-lg">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img
+                    src="assets/noakhali.png"
+                    class="max-w-sm mr-3 rounded-lg shadow-2xl" />
+                  <div>
+                    <div class="flex gap-x-2 bg-[#f0efef] w-28 py-1 rounded-lg">
+                        <img src="assets/coin.png" alt="">
+                        <p id="donated-balance" class="font-semibold">0</p>
+                        <p class="font-semibold">BDT</p>
+                    </div>
+                    <h1 class="text-2xl mt-4 font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <p class="py-6 text-neutral-500">
+                        The recent floods in Noakhali have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster. Every contribution, <br> big or small, makes  difference. Please join us in supporting the relief <br> efforts and making a positive impact on the lives of those in need.
+                    </p>
+                        <input id="input-amount-field" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />               
+                    <div class=" flex justify-center mt-4 ">
+                        <button id="donate-now-btn" class="btn font-bold text-lg bg-[#B4F461] w-full">Donate Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- first section end -->
+
+    </main>
+    <script src="js/utility.js"></script>
+    <script src="js/donaition.js"></script>
 </body>
 </html>
