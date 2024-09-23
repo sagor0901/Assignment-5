@@ -16,7 +16,7 @@
     <div class="navbar">
   <div class="navbar-start justify-center">
     <div>
-        <button class="btn px-11 font-bold text-xl bg-[#B4F461]">Blog</button>
+        <button id="blog-btn"  class="btn px-11 font-bold text-xl bg-[#B4F461]">Blog</button>
     </div>
   </div>
   <div class="navbar-center">
@@ -33,13 +33,14 @@
     </div>
     </header>
     <!-- navbar end here  -->
-     <div class="flex justify-center mt-20 space-x-4">
-        <button class="btn px-8 font-bold text-xl bg-[#B4F461]">Donation</button>
-        <button class="btn px-8 font-bold text-xl bg-[#B4F461]">History</button>
+     <div id="btn-container" class="flex justify-center mt-20 space-x-4">
+        <button id="donation-button" class="btn px-5 font-bold text-xl bg-[#B4F461]">Donation</button>
+        <button id="history-button" class="btn px-8 ">History</button>
      </div>
     <main class="mt-20 ">
-        <!-- first section start  -->
-        <section>
+        <div id="donaition-container">
+            <!-- first section start  -->
+        <section class="">
             <div class="hero bg-white mx-auto border lg:w-7/12 justify-between rounded-lg">
                 <div class="hero-content flex-col lg:flex-row">
                   <img
@@ -93,7 +94,7 @@
         <!-- secound donation section end -->
 
         <!-- third donation section start  -->
-        <section class="mt-10">
+        <section  class="mt-10">
             <div class="hero mx-auto bg-white border lg:w-7/12 justify-between rounded-lg">
                 <div class="hero-content flex-col lg:flex-row">
                   <img
@@ -118,9 +119,43 @@
               </div>
         </section>
         <!-- third donation section end -->
+        </div>
+
+        <!-- History section start here  -->
+        <div id="history-container" class="hidden  bg-white">
+        </div>
+        <!-- History section end here  -->
+
+        <!-- faq section start -->
+         <div id="faq-container" class="w-7/12 hidden mx-auto">
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the full mening of DOM?</div>
+                <div class="collapse-content">
+                  <p>DOM full menineg = Document Object Model</p>
+                </div>
+              </div>
+              <div class="collapse mt-5 collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is dom?</div>
+                <div class="collapse-content">
+                  <p>DOM is a programming interface for web documents</p>
+                </div>
+              </div>
+              <div class="collapse mt-5 collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">where the Document model came from</div>
+                <div class="collapse-content">
+                  <p>The document object model originated as a specification to allow javaScript.</p>
+                </div>
+              </div>
+         </div>
+        <!-- faq section end -->
+
 
     </main>
     <script src="js/utility.js"></script>
     <script src="js/donaition.js"></script>
+    <script src="js/history.js"></script>
 </body>
 </html>
